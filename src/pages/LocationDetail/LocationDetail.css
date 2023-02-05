@@ -1,0 +1,185 @@
+.location
+{
+    padding-top: 25px;
+    padding-left: 75px;
+    padding-right: 75px;
+    margin-left: 10px;
+    max-width: 1620px;
+    margin:0 auto;
+}
+
+.locationName{
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 36px;
+    margin-bottom: 0px;
+    color: #FF6060;
+}
+
+.locationChecked
+{
+    width: 100%;
+}
+
+.locationPlace
+{
+    font-size: 18px;
+    color:#FF6060;
+    font-weight: 100;
+    margin-top: 5px;
+}
+
+.equip-dropdowns{
+    display: flex;
+    gap : 25px;
+}
+
+.equip-dropdowns .collapse-item{
+    width: 50%;
+    gap : 25px;
+    flex-direction: column;
+}
+
+.equip-dropdowns .collapse-item .toggle{
+    font-weight: 500;
+    font-size: 18px;
+} 
+
+.equip-dropdowns .collapse-item .content-display {
+    gap : 25px;
+    font-weight: 400;
+    font-size: 18px;
+    padding-left: 0;
+    padding-top: 1px;
+    padding-bottom: 5px;
+}
+
+.equip-dropdowns .collapse-item .content-display p {
+    padding-left: 10px;
+    padding-top: 30px;
+}
+
+.equip-dropdowns .collapse-item .content-display ul {
+    list-style-type: none;
+    padding-top: 0;
+    padding-left: 10px;
+}
+
+.locationLandlord
+{
+    display: flex;
+    right: 0;
+    align-items: center;
+    width: 155px;
+    justify-content: space-between;
+    float: right;
+    margin-top: -170px;
+    font-family: Montserrat;
+}
+
+.location h3
+{
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FF6060;
+    text-align: end;
+    padding-right: 10px;
+}
+.locationLandlord .landlordPicture
+{
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+}
+
+.locationRating
+{
+    text-align: end;
+    margin-top: -60px;
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1340px) {
+    .locationLandlord{
+      margin: 0;
+    }
+    .locationRating{
+        margin-top: 40px;
+        margin-bottom: 60px;
+        text-align: left;
+    }
+  }
+
+@media screen and (min-width: 535px) and (max-width: 729px) {
+    .location{
+        margin: 0 auto;
+        padding: 20px;
+        padding-top : 20px
+    }
+  }
+
+  @media screen and (min-width: 300px) and (max-width: 534px) {
+    .location{
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top : 20px
+    }
+
+    .locationName
+    {
+        font-size: 25px;
+    }
+
+    .locationLandlord
+    {
+        align-items: center;
+        width: 100px;
+    }
+
+    .locationLandlord h3
+    {
+        font-size: 12px;
+        margin-right: 0px;
+        justify-content: baseline;
+
+    }
+    .locationLandlord .landlordPicture
+    {
+        width: 40px;
+        height: 40px;
+    }
+    .locationTags .tags
+    {
+        width: auto;
+        font-size: 10px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .equip-dropdowns{
+        flex-direction: column;
+    }
+
+    .equip-dropdowns .collapse-item
+    {
+        width: auto;
+    }
+
+    .equip-dropdowns .collapse-item .toggle
+    {
+        width: 100%;
+    }
+    .equip-dropdowns .collapse-item .content-display
+    {
+        width: 100%;
+    }
+
+
+
+    .locationRating .rating img 
+    {
+        width: 26px;
+    }
+  }

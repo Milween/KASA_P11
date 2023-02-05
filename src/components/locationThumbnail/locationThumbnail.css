@@ -1,0 +1,124 @@
+allLocations
+{
+    background-color: #F6F6F6;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+.allLocations .locationBloc {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: auto;
+    min-width: 0;
+    row-gap: 55px;
+    column-gap: 50px;
+}
+
+.allLocations .locationBloc a
+{
+    display: flex;
+    min-width: 0;
+    transition:0.5s;
+} 
+
+.allLocations .locationBloc a:hover
+{
+    display: flex;
+    transform: scale(1.02);
+} 
+
+.allLocations .locationBloc a:link
+{
+    display: flex;
+    min-width: 0;
+    text-decoration: none;
+} 
+
+.allLocations .locationBloc a figure img
+{
+    object-fit: cover;
+    width:330px;
+    height:330px;
+    border-radius: 10px;
+}
+
+figure figcaption 
+{
+    margin-top: -70px;
+    position: relative;
+    padding-left: 20px;
+    color: white;
+    font-weight: 500;
+    font-family: Montserrat;
+    font-size: 18px;
+    width: 300px;
+}
+
+@media screen and (min-width: 1191px) and (max-width: 1700px) {
+    .allLocations .locationBloc a figure img
+    {
+        object-fit: cover;
+        width:320px;
+        height:320px;
+        border-radius: 10px;
+    }
+  }
+
+  @media screen and (min-width: 1004px) and (max-width: 1190px) {
+    .allLocations .locationBloc a figure img
+    {
+        object-fit: cover;
+        width:500px;
+        height:280px;
+        border-radius: 10px;
+    }
+  }
+
+  @media screen and (min-width: 730px) and (max-width:1003px ) {
+    .allLocations .locationBloc a figure img
+    {
+        width:400px;
+        border-radius: 10px;
+    }
+  }
+
+@media screen and (min-width: 560px) and (max-width: 729px) {
+    .allLocations 
+    {
+        width: 95%;
+    }
+    .allLocations .locationBloc a figure img
+    {
+        object-fit: cover;
+        width:400px;
+        border-radius: 10px;
+    }
+  }
+
+@media screen and (min-width: 100px) and (max-width: 560px) {
+  .allLocations 
+  {
+      width: 95%;
+      background: none;
+      padding: 0;
+      margin-left: 16px;
+  }
+  .allLocations .locationBloc a figure 
+  {
+      padding:0;
+      margin:0;
+  }
+  .allLocations .locationBloc a figure img
+  {
+      object-fit: cover;
+      border-radius: 10px;
+      height: 265px;
+      width: 95%;
+  }
+}

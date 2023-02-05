@@ -1,0 +1,23 @@
+.locationTags
+{
+    display:flex;
+    column-gap: 25px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    font-family: Montserrat;
+    align-items: center;
+}
+
+.tags{
+    background-color: #FF6060;
+    width: auto;
+    padding: 5px;
+    border-radius: 25px;
+    color: white;
+}
+
+.tags .locationTagsChecked
+{
+    margin: 0;
+    padding: 5px;
+}
