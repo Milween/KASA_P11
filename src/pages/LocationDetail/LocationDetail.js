@@ -16,7 +16,7 @@ const LocationDetail = ( { locationList } ) => {
   //const locationSelected = locationList.find((location) => location.id === locationID)
   useEffect(() => {
     setLocationSelected(locationList.find((location) => location.id === locationID))
-  })
+  }, [setLocationSelected, locationID, locationList])
   if (!locationSelected){
     return (
       <Error/>
@@ -51,8 +51,8 @@ const LocationDetail = ( { locationList } ) => {
           </Collapse> 
           <Collapse label="Equipement"> 
             <ul>
-              {equipments.map((equipment) => {
-                return <li>{equipment}</li>
+              {equipments.map((equipment, index) => {
+                return <li key={index}>{equipment}</li>
               })}
               </ul>
           </Collapse>

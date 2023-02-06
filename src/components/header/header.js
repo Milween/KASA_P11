@@ -14,9 +14,10 @@ const Header = () => {
           <ul>
             <li>
               <NavLink
-                className="headerLink"
-                exact
                 to="/"
+                className={({ isActive }) =>
+              'headerLink' + (isActive ? ' souligner' : '')
+            }
               >
                 Accueil
               </NavLink>
@@ -24,7 +25,9 @@ const Header = () => {
 
             <li>
               <NavLink
-                className="headerLink"
+                className={({ isActive }) =>
+                'headerLink' + (isActive ? ' souligner' : '')
+              }
                 to="/about"
               >
                 &Agrave; propos

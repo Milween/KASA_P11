@@ -19,11 +19,11 @@ const Gallery = ({pictures}) => {//adds up the gallery component
     return (   
         <div className="gallery">
             {pictures?.length > 1 ?<div className="left"onClick={previousImage}>
-                <i class="fa-solid fa-4x fa-chevron-left"></i>
+                <i className="fa-solid fa-4x fa-chevron-left"></i>
             </div> : ""}
             <img src={pictures[currentIndex]} alt="location-illustration"/>
-            {pictures?.length > 1 ? <div class="right" onClick={nextImage}>
-                <i class="fa-solid fa-4x fa-chevron-right"></i>
+            {pictures?.length > 1 ? <div className="right" onClick={nextImage}>
+                <i className="fa-solid fa-4x fa-chevron-right"></i>
             </div>: ""}
             <div className="picture-number">
               {currentIndex + 1}/{pictures.length}

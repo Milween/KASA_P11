@@ -26,6 +26,10 @@ header {
   font-size: 24px;
 }
 
+.souligner {
+  text-decoration : underline;
+}
+
 .main-nav li {
   text-align: center;
   margin: 0 0 0 50px;
